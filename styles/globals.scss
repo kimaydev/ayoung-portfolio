@@ -7,6 +7,35 @@
 @tailwind components;
 @tailwind utilities;
 
+// 공통 스타일 설정
+:root {
+  --main-colorA: #b6f1e0;
+  --main-colorB: #75e1c2;
+  --sub-colorA: #ff8399;
+  --font-colorA: #292929;
+}
+// 블럭 색상 커스텀
+::-moz-selection {
+  background: var(--main-colorB);
+  color: #fff;
+}
+::selection {
+  background: var(--main-colorB);
+  color: #fff;
+}
+// 스크롤바 커스텀
+::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-colorA);
+  border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 html,
 body {
   position: relative;
@@ -29,7 +58,8 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  background: pink;
+  background: var(--main-colorA);
+  color: var(--font-colorA);
 }
 
 @layer base {
@@ -40,4 +70,9 @@ body {
     align-items: center;
     justify-content: center;
   }
+}
+
+// about
+.about-section-title {
+  // text-align: center;
 }

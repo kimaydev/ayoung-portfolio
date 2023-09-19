@@ -22,6 +22,12 @@ const config: Config = {
       width: {
         '95per': '95%',
       },
+      colors: {
+        'main-colorA': 'var(--main-colorA)',
+        'main-colorB': 'var(--main-colorB)',
+        'sub-colorA': 'var(--sub-colorA)',
+        'font-colorA': 'var(--font-colorA)',
+      },
     },
   },
   plugins: [],
