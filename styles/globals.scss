@@ -74,5 +74,24 @@ body {
 
 // about
 .about-section-title {
-  // text-align: center;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    margin: 5px auto 0;
+    background: var(--sub-colorA);
+  }
+}
+.about-section-list {
+  background: #fff;
+  & > li {
+    padding: 5px 0;
+    border-bottom: 0.5px dashed var(--main-colorA);
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
 }
