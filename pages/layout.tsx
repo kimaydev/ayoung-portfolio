@@ -37,8 +37,8 @@ export default function Layout({ children }: LayoutProps) {
         <title>프론트엔드 김아영</title>
       </Head>
       <Header />
-      <main className="bg-white max-w-screen-3xl w-95per h-5/6 rounded-3xl p-5">
-        <div className="w-full h-full overflow-y-auto">{children}</div>
+      <main className="pt-16 pb-20 max-w-screen-3xl w-95per mx-auto">
+        <div className="">{children}</div>
       </main>
       <Footer />
     </>

@@ -27,6 +27,7 @@ const config: Config = {
         'main-colorB': 'var(--main-colorB)',
         'sub-colorA': 'var(--sub-colorA)',
         'font-colorA': 'var(--font-colorA)',
+        'white-colorA': 'var(--white-colorA)',
       },
     },
   },

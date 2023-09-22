@@ -8,16 +8,6 @@ import { MdEmail } from 'react-icons/md';
 const About = () => {
   return (
     <>
-      {/* 타이틀 */}
-      <div className="text-5xl mt-5 mb-10 font-black px-5">
-        <p className="text-[0.55em] font-bold mb-2">
-          Hello World, I&apos;m{' '}
-          <b className="font-bold text-sub-colorA">Ayoung-Kim!</b>
-        </p>
-        <h2>
-          저는 <b>이런 사람</b>입니다!
-        </h2>
-      </div>
       {/* 내용 */}
       <div>
         <section className="mb-10 px-5">
@@ -121,7 +111,7 @@ const About = () => {
           <div className="w-1/2">
             <h3 className="text-3xl font-bold mb-1.5">
               <i className="text-[0.7em] leading-none align-[3px]">💳</i>
-              License
+              License<b className="text-sub-colorA">.</b>
             </h3>
             <ul className="about-section-list">
               <li>웹디자인 기능사 (2020. 09)</li>
@@ -134,7 +124,7 @@ const About = () => {
           <div className="w-1/2">
             <h3 className="text-3xl font-bold mb-1.5">
               <i className="text-[0.7em] leading-none align-[3px]">📝</i>
-              Profile
+              Profile<b className="text-sub-colorA">.</b>
             </h3>
             <ul className="about-section-list">
               <li>공주대학교 만화애니메이션 학부 졸업</li>

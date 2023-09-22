@@ -4,8 +4,8 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="header fixed top-0 left-0 z-999 w-full h-16">
-      <div className="flex items-center justify-between max-w-screen-3xl w-95per h-full mx-auto">
+    <header className="header fixed top-0 left-0 z-999 w-full h-16 bg-white-colorA backdrop-blur-sm">
+      <div className="flex items-center justify-between max-w-screen-3xl w-95per h-full mx-auto border-font-colorA border-b-[0.5px] border-solid">
         <h1>
           <Link href="/">
             <Image
@@ -17,12 +17,15 @@ const Header = () => {
           </Link>
         </h1>
         <nav className="nav">
-          <ul className="flex items-center gap-x-2.5">
+          <ul className="flex items-center gap-x-3.5">
             <li>
               <Link href="/">Home</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/about">About</Link>
+            </li> */}
+            <li>
+              <Link href="/portfolio/frontend">Career</Link>
             </li>
             <li>
               <Link href="/portfolio/frontend">Portfolio</Link>
