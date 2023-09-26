@@ -75,19 +75,26 @@ export default function Home() {
                     kimaydev@gmail.com
                   </Link>
                 </li>
-                <li className="flex items-center gap-x-2.5">
-                  <Link href="https://github.com/kimaydev" target="_blank">
+                <li className="flex items-center gap-x-0.5">
+                  <Link
+                    href="https://github.com/kimaydev"
+                    target="_blank"
+                    className="link-button"
+                  >
                     <i className="text-2xl leading-none">
                       <FaGithub />
                     </i>
+                    <span>깃허브 보러가기</span>
                   </Link>
                   <Link
                     href="https://kimaydev.notion.site/FE-7a53f9f631f146c88c39413cd175a9d0?pvs=4"
                     target="_blank"
+                    className="link-button"
                   >
                     <i className="text-2xl leading-none">
                       <SiNotion />
                     </i>
+                    <span>노션 보러가기</span>
                   </Link>
                 </li>
               </ol>
@@ -173,7 +180,7 @@ export default function Home() {
                   </li>
                   <li className="list-wrap">
                     <span>작업기간</span>
-                    <p>2023.07.13 ~ 2023.09.14</p>
+                    <p>2023.06.21 ~ 2023.07.13</p>
                   </li>
                   <li className="list-wrap">
                     <span>작업인원</span>
@@ -190,6 +197,110 @@ export default function Home() {
                       일기를 작성할 수 있는 어플로 다양한 연령대를 겨냥해
                       누구라도 사용이 쉬운 UI/UX를 지향하며, 나만의 식물
                       관리라는 분명한 목적 의식을 제공
+                    </p>
+                  </li>
+                </ol>
+                <ol className="project-list">
+                  <li>
+                    <h5 className="">
+                      2차 백엔드(Spring 기반) 협업 React 팀 프로젝트
+                      <span className="block text-lg font-bold">
+                        <i className="text-[0.8em] align-[2px]">🍷</i>Winey
+                      </span>
+                    </h5>
+                  </li>
+                  <li className="flex items-center gap-x-0.5 mb-2.5">
+                    <Link
+                      href="https://github.com/kimaydev/winey"
+                      target="_blank"
+                      className="link-button"
+                    >
+                      <i className="text-2xl leading-none">
+                        <FaGithub />
+                      </i>
+                      <span>깃허브 보러가기</span>
+                    </Link>
+                    <Link
+                      href="https://kimaydev.notion.site/2-3-Winey-120504f34f9447e1986c70406af35c81?pvs=4"
+                      target="_blank"
+                      className="link-button"
+                    >
+                      <i className="text-2xl leading-none">
+                        <SiNotion />
+                      </i>
+                      <span>노션 보러가기</span>
+                    </Link>
+                  </li>
+                  <li className="list-wrap">
+                    <span>작업기간</span>
+                    <p>2023.07.13 ~ 2023.08.18</p>
+                  </li>
+                  <li className="list-wrap">
+                    <span>작업인원</span>
+                    <p>
+                      프론트엔드 : 3명
+                      <br />
+                      백엔드 : 5명
+                    </p>
+                  </li>
+                  <li className="list-wrap">
+                    <span>작업내용</span>
+                    <p className="break-keep">
+                      와인 초보자에 포커스를 두고 구매자 취향에 따른 맞춤 추천과
+                      페어링 음식 등을 제공하고 와인별 입문 난이도를 표기하여
+                      진입장벽을 완화시킨 픽업 서비스 구상
+                    </p>
+                  </li>
+                </ol>
+                <ol className="project-list">
+                  <li>
+                    <h5 className="">
+                      3차 백엔드(Spring 기반) 협업 React 팀 프로젝트
+                      <span className="block text-lg font-bold">
+                        <i className="text-[0.8em] align-[2px]">🍷</i>Winey
+                        Admin
+                      </span>
+                    </h5>
+                  </li>
+                  <li className="flex items-center gap-x-0.5 mb-2.5">
+                    <Link
+                      href="https://github.com/kimaydev/winey"
+                      target="_blank"
+                      className="link-button"
+                    >
+                      <i className="text-2xl leading-none">
+                        <FaGithub />
+                      </i>
+                      <span>깃허브 보러가기</span>
+                    </Link>
+                    <Link
+                      href="https://kimaydev.notion.site/2-3-Winey-120504f34f9447e1986c70406af35c81?pvs=4"
+                      target="_blank"
+                      className="link-button"
+                    >
+                      <i className="text-2xl leading-none">
+                        <SiNotion />
+                      </i>
+                      <span>노션 보러가기</span>
+                    </Link>
+                  </li>
+                  <li className="list-wrap">
+                    <span>작업기간</span>
+                    <p>2023.08.21 ~ 2023.09.14</p>
+                  </li>
+                  <li className="list-wrap">
+                    <span>작업인원</span>
+                    <p>
+                      프론트엔드 : 3명
+                      <br />
+                      백엔드 : 5명
+                    </p>
+                  </li>
+                  <li className="list-wrap">
+                    <span>작업내용</span>
+                    <p className="break-keep">
+                      타입스크립트를 이용한 관리자 페이지 작업 및 사용자 페이지
+                      고도화 작업
                     </p>
                   </li>
                 </ol>
