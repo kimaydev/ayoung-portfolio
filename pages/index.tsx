@@ -94,44 +94,108 @@ export default function Home() {
             </li>
           </ul>
         </section>
-        <section className="text-center">
-          <h3 className="about-section-title text-3xl font-bold mb-2.5">
+        <section className="">
+          <h3 className="about-section-title text-3xl font-bold mb-2.5 text-center">
             <i className="block text-[0.7em] leading-none">💼</i>
             Career
           </h3>
-          <ul className="text-lg">
-            <li className="font-bold">
-              주식회사 11마리의낭만고양이 (2020. 08 ~ 2022. 12)
-            </li>
-            <li>
-              <ol>
-                <li>웹 사업부 매니저</li>
-                <li className="text-base">웹 UI/UX 기획 및 디자인</li>
-                <li className="text-base">웹 퍼블리싱</li>
-              </ol>
-            </li>
-          </ul>
-          <ul className="text-lg">
-            <li className="font-bold">대륙산업 (2019. 04 ~ 2020. 01)</li>
-            <li>
-              <ol>
-                <li>디자인 부서 주임</li>
-                <li className="text-base">상세페이지 제작</li>
-                <li className="text-base">디자인 시안 교정</li>
-              </ol>
-            </li>
-          </ul>
+          <div className="flex gap-x-8 items-start justify-between">
+            <ul className="text-lg w-1/2">
+              <li className="company-name">
+                주식회사 11마리의낭만고양이 (2020. 08 ~ 2022. 12)
+              </li>
+              <li>
+                <ol>
+                  <li className="mb-1">웹 사업부 매니저</li>
+                  <li className="ml-2 mb-0.5 text-base">· 웹 퍼블리싱</li>
+                  <li className="ml-2 mb-0.5 text-base">
+                    · 웹 UI/UX 기획 및 디자인
+                  </li>
+                </ol>
+              </li>
+            </ul>
+            <ul className="text-lg w-6/12">
+              <li className="company-name">대륙산업 (2019. 04 ~ 2020. 01)</li>
+              <li>
+                <ol>
+                  <li className="mb-1">디자인 부서 주임</li>
+                  <li className="ml-2 mb-0.5 text-base">· 상세페이지 제작</li>
+                  <li className="ml-2 mb-0.5 text-base">· 디자인 시안 교정</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
         </section>
         <section className="">
           <h3 className="about-section-title text-3xl font-bold mb-2.5 text-center">
             <i className="block text-[0.7em] leading-none">👩‍👩‍👦‍👦</i>
             Collaborative Project
           </h3>
-          <ul>
-            <li>1차 백엔드(Spring 기반) 협업 React 팀 프로젝트</li>
-            <li>2차 백엔드(Spring 기반) 협업 React 팀 프로젝트</li>
-            <li>2차 백엔드(Spring 기반) 협업 React 팀 프로젝트</li>
-          </ul>
+          <div>
+            <ul>
+              <li className="company-name">
+                <h4 className="text-lg">
+                  [KDT]기업 요구를 반영한 프로젝트 중심 프론트엔드 React(리액트)
+                  개발자 양성 - 백엔드(Spring Boot) 협업 리액트 프로젝트
+                </h4>
+              </li>
+              <li>
+                <ol className="project-list">
+                  <li>
+                    <h5 className="">
+                      1차 백엔드(Spring 기반) 협업 React 팀 프로젝트
+                      <span className="block text-lg font-bold">
+                        <i className="text-[0.8em] align-[2px]">🌱</i>Grow Green
+                      </span>
+                    </h5>
+                  </li>
+                  <li className="flex items-center gap-x-0.5 mb-2.5">
+                    <Link
+                      href="https://github.com/kimaydev/growgreen"
+                      target="_blank"
+                      className="link-button"
+                    >
+                      <i className="text-2xl leading-none">
+                        <FaGithub />
+                      </i>
+                      <span>깃허브 보러가기</span>
+                    </Link>
+                    <Link
+                      href="https://kimaydev.notion.site/1-TodoList-Grow-Green-636f36c85f604fcc9d78693527240fd8?pvs=4"
+                      target="_blank"
+                      className="link-button"
+                    >
+                      <i className="text-2xl leading-none">
+                        <SiNotion />
+                      </i>
+                      <span>노션 보러가기</span>
+                    </Link>
+                  </li>
+                  <li className="list-wrap">
+                    <span>작업기간</span>
+                    <p>2023.07.13 ~ 2023.09.14</p>
+                  </li>
+                  <li className="list-wrap">
+                    <span>작업인원</span>
+                    <p>
+                      프론트엔드 : 2명
+                      <br />
+                      백엔드 : 3명
+                    </p>
+                  </li>
+                  <li className="list-wrap">
+                    <span>작업내용</span>
+                    <p className="break-keep">
+                      키우고 있는 식물을 업로드 하고 그 식물에 대한 투두 및
+                      일기를 작성할 수 있는 어플로 다양한 연령대를 겨냥해
+                      누구라도 사용이 쉬운 UI/UX를 지향하며, 나만의 식물
+                      관리라는 분명한 목적 의식을 제공
+                    </p>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
         </section>
         <section className="flex items-start justify-between gap-x-8">
           <div className="w-1/2">
