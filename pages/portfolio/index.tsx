@@ -1,11 +1,9 @@
 import React from 'react';
-import ListItem from '@/components/portfolio/ListItem';
-import { NextPage } from 'next';
-import { DATABASE_ID, TOKEN } from '@/config';
 import { postData } from '@/lib/patchData';
+import ListItem from '@/components/portfolio/ListItem';
 
-const Frontend: NextPage = ({ props }: any) => {
-  // console.log(props);
+const Frontend = ({ resultId }: any) => {
+  // console.log(resultId);
   return (
     <div className="max-w-screen-lg mx-auto">
       <h3 className="about-section-title text-3xl font-bold mt-8 mb-2.5 text-center">
@@ -21,7 +19,8 @@ const Frontend: NextPage = ({ props }: any) => {
 export default Frontend;
 
 export const getStaticProps = async () => {
-  const post = await postData();
-  console.log('들어오는 데이터', post);
-  return { props: { post } };
+  const resultData = await postData();
+  const resultId = resultData.results.map((item: any) => item.id);
+
+  return { props: { resultId } };
 };

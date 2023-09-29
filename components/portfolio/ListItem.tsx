@@ -6,7 +6,7 @@ const ListItem = () => {
   return (
     <ul>
       {/* <li>테스트 : {result}</li> */}
-      {/* {Array(14)
+      {Array(14)
         .fill(0)
         .map((item, index) => (
           <li key={index}>
@@ -28,7 +28,7 @@ const ListItem = () => {
               </div>
             </Link>
           </li>
-        ))} */}
+        ))}
     </ul>
   );
 };
