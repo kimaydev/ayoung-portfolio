@@ -38,6 +38,7 @@ interface Itag {
 }
 interface ImultiSelect {
   name: string;
+  color: string;
 }
 // 프로젝트 기간에 대한 타입 지정
 interface Idate {

@@ -1,0 +1,21 @@
+// 화면 크기
+$tablet: 1023px;
+$mobile-l: 767px;
+$mobile-m: 551px;
+
+// 반응형
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin mobile-l {
+  @media (max-width: $mobile-l) {
+    @content;
+  }
+}
+@mixin mobile-m {
+  @media (max-width: $mobile-m) {
+    @content;
+  }
+}

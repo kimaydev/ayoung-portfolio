@@ -34,13 +34,19 @@ const Frontend: NextPage<Iprops> = ({ resultData }) => {
                 </div>
                 <div className="txt-box">
                   <ol>
-                    <li>{item.properties.이름.title[0].plain_text}</li>
-                    <li>
+                    <li className="title">
+                      {item.properties.이름.title[0].plain_text}
+                    </li>
+                    <li className="date">
                       {item.properties.date.date.start.slice(2)}
                       &nbsp;~&nbsp;
                       {item.properties.date.date.end.slice(2)}
                     </li>
-                    <li>{item.properties.tag.multi_select[0].name}</li>
+                    <li className="tag">
+                      <p className={item.properties.tag.multi_select[0].color}>
+                        {item.properties.tag.multi_select[0].name}
+                      </p>
+                    </li>
                   </ol>
                 </div>
               </Link>
@@ -61,5 +67,7 @@ export const getStaticProps: GetStaticProps<Iprops> = async () => {
     props: {
       resultData,
     },
+    // 5초 대기 후 다시 HTML 생성
+    revalidate: 5,
   };
 };

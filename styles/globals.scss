@@ -2,6 +2,8 @@
 @import 'reset.scss';
 // 폰트
 @import 'font.scss';
+// 반응형
+@import 'utills.scss';
 // tailwind
 @tailwind base;
 @tailwind components;
@@ -38,6 +40,23 @@
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+// tag 색상 설정
+$tag-yellow-a: rgb(253, 236, 200);
+$tag-yellow-b: rgb(64, 44, 27);
+$tag-red-a: rgb(255, 226, 221);
+$tag-red-b: rgb(93, 23, 21);
+$tag-pink-a: rgb(245, 224, 233);
+$tag-pink-b: rgb(76, 35, 55);
+$tag-green-a: rgb(219, 237, 219);
+$tag-green-b: rgb(28, 56, 41);
+$tag-gray-a: rgb(227, 226, 224);
+$tag-gray-b: rgb(50, 48, 44);
+$tag-orange-a: rgb(250, 222, 201);
+$tag-orange-b: rgb(73, 41, 14);
+$tag-default-a: rgba(227, 226, 224, 0.5);
+$tag-default-b: rgb(50, 48, 44);
+$tag-blue-a: rgb(211, 229, 239);
+$tag-blue-b: rgb(24, 51, 71);
 
 html,
 body {
@@ -180,6 +199,7 @@ body {
     }
   }
 }
+
 // portfolio
 .portfolio-section {
   ul {
@@ -194,7 +214,8 @@ body {
       isolation: isolate;
       .img-box {
         position: relative;
-        padding-top: 70%;
+        padding-top: 60%;
+        border-bottom: 0.5px solid var(--font-colorC);
         img {
           position: absolute;
           top: 50%;
@@ -206,7 +227,58 @@ body {
         }
       }
       .txt-box {
-        padding: 15px 10px 20px;
+        padding: 15px 10px;
+        font-size: 1.2rem;
+        .title {
+          min-height: 3.6rem;
+          font-weight: 700;
+          word-break: keep-all;
+          margin-bottom: 10px;
+        }
+        .date {
+          font-size: 0.8em;
+        }
+        .tag {
+          p {
+            display: inline-block;
+            font-size: 1rem;
+            padding: 2px 6px;
+            margin-top: 5px;
+            border-radius: 5px;
+            &.yellow {
+              background: $tag-yellow-a;
+              color: $tag-yellow-b;
+            }
+            &.red {
+              background: $tag-red-a;
+              color: $tag-red-b;
+            }
+            &.pink {
+              background: $tag-pink-a;
+              color: $tag-pink-b;
+            }
+            &.green {
+              background: $tag-green-a;
+              color: $tag-green-b;
+            }
+            &.gray {
+              background: $tag-gray-a;
+              color: $tag-gray-b;
+            }
+            &.orange {
+              background: $tag-orange-a;
+              color: $tag-orange-b;
+            }
+            &.default {
+              background: $tag-default-a;
+              color: $tag-default-b;
+            }
+            &.blue {
+              background: $tag-blue-a;
+              color: $tag-blue-b;
+            }
+          }
+        }
       }
     }
   }
