@@ -23,7 +23,7 @@ const Frontend: NextPage<Iprops> = ({ resultData }) => {
         <ul>
           {results.map((item: Iresults) => (
             <li key={item.id}>
-              <Link href={item.public_url} target="_blank">
+              <Link href={item.properties.url.url} target="_blank">
                 <div className="img-box">
                   <Image
                     src={item.properties.thum.files[0].file.url}

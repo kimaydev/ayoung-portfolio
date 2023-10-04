@@ -12,10 +12,15 @@ export interface Iresults {
   properties: Iproperies;
 }
 interface Iproperies {
+  url: Iurl;
   thum: Ithum;
   tag: Itag;
   date: Idate;
   이름: Ititle;
+}
+// url에 대한 타입 지정
+interface Iurl {
+  url: string;
 }
 // 썸네일 이미지에 대한 타입 지정
 interface Ithum {
