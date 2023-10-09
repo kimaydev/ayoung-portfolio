@@ -22,14 +22,15 @@ export default function Home() {
                 팀원들과 어우러지는 사람이 되겠습니다.
               </p>
             </div>
-            <Link href="/">Portfolio</Link>
+            {/* <Link href="/">Portfolio</Link> */}
           </div>
           <div className="right">
             <Image
-              src="https://via.placeholder.com/400x500"
+              src="/img/main_img.png"
               alt="메인이미지"
-              width={400}
-              height={500}
+              width={900}
+              height={645}
+              quality={100}
             />
           </div>
         </section>
@@ -40,10 +41,11 @@ export default function Home() {
           <ul className="flex items-center justify-between max-w-3xl w-full mx-auto">
             <li>
               <Image
-                src="https://via.placeholder.com/300"
+                src="/img/notion.png"
                 alt="김아영"
-                width={300}
-                height={300}
+                width={250}
+                height={250}
+                quality={100}
               />
             </li>
             <li className="w-[400px]">

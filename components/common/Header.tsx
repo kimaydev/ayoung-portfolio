@@ -8,12 +8,7 @@ const Header = () => {
       <div className="flex items-center justify-between max-w-screen-3xl w-95per h-full mx-auto border-font-colorA border-b-[0.5px] border-solid">
         <h1>
           <Link href="/">
-            <Image
-              src="https://via.placeholder.com/150x50"
-              alt="로고"
-              width={150}
-              height={50}
-            />
+            <Image src="/img/logo.svg" alt="로고" width={55} height={32} />
           </Link>
         </h1>
         <nav className="nav">
@@ -21,18 +16,9 @@ const Header = () => {
             <li>
               <Link href="/">Home</Link>
             </li>
-            {/* <li>
-              <Link href="/about">About</Link>
-            </li> */}
-            {/* <li>
-              <Link href="/portfolio/frontend">Career</Link>
-            </li> */}
             <li>
               <Link href="/portfolio">Portfolio</Link>
             </li>
-            {/* <li>
-              <Link href="/portfolio/publishing">Publishing Portfolio</Link>
-            </li> */}
           </ul>
         </nav>
       </div>
