@@ -30,6 +30,9 @@ const config: Config = {
         'font-colorB': 'var(--font-colorB)',
         'white-colorA': 'var(--white-colorA)',
       },
+      screens: {
+        sm: { max: '550px' },
+      },
     },
   },
   plugins: [],

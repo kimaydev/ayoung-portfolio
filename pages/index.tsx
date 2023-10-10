@@ -11,13 +11,13 @@ export default function Home() {
       <div className="main-section-wrap flex items-center w-full h-full">
         <section className="flex items-center justify-between w-full">
           <div className="left">
-            <div>
-              <h2 className="text-4xl mb-5 font-black">
+            <div className="mb-[10%]">
+              <h2 className="text-4xl mb-5 font-black break-keep">
                 반갑습니다!
                 <br />
                 프론트엔드 개발자 김아영입니다.
               </h2>
-              <p>
+              <p className="break-keep">
                 유연한 사고방식과 공정함으로 <br />
                 팀원들과 어우러지는 사람이 되겠습니다.
               </p>

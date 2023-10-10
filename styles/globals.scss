@@ -123,7 +123,7 @@ body {
 }
 // main
 .main-section-wrap {
-  min-height: 58rem;
+  min-height: 90vh;
   max-height: calc(95vh - 4rem);
 }
 // about
@@ -279,6 +279,27 @@ body {
             }
           }
         }
+      }
+    }
+  }
+}
+// notfound
+.notfound-section-wrap {
+  height: 70vh;
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    & > div {
+      text-align: center;
+      i {
+        display: inline-block;
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 2rem;
+        font-weight: 900;
       }
     }
   }
