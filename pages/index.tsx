@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaReact } from 'react-icons/fa';
 import { SiNotion } from 'react-icons/si';
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
         </section>
       </div>
       {/* about */}
-      <div className="about-section-wrap">
+      <div className="about-section-wrap max-w-5xl">
         <section className="">
           <ul className="profile-wrap max-w-3xl">
             <li>
@@ -182,6 +182,16 @@ export default function Home() {
                       </i>
                       <span>노션 보러가기</span>
                     </Link>
+                    <Link
+                      href="https://web-growgreen-eg4e2alkkyf0ef.sel4.cloudtype.app/"
+                      target="_blank"
+                      className="link-button"
+                    >
+                      <i className="text-2xl leading-none">
+                        <FaReact />
+                      </i>
+                      <span>사이트 보러가기</span>
+                    </Link>
                   </li>
                   <li className="list-wrap">
                     <span>작업기간</span>
@@ -236,6 +246,16 @@ export default function Home() {
                       </i>
                       <span>노션 보러가기</span>
                     </Link>
+                    <Link
+                      href="https://web-winey-react-iciy2almrfaqcz.sel5.cloudtype.app/"
+                      target="_blank"
+                      className="link-button"
+                    >
+                      <i className="text-2xl leading-none">
+                        <FaReact />
+                      </i>
+                      <span>사이트 보러가기</span>
+                    </Link>
                   </li>
                   <li className="list-wrap">
                     <span>작업기간</span>
@@ -289,6 +309,16 @@ export default function Home() {
                         <SiNotion />
                       </i>
                       <span>노션 보러가기</span>
+                    </Link>
+                    <Link
+                      href="https://web-winey-react-iciy2almrfaqcz.sel5.cloudtype.app/admin"
+                      target="_blank"
+                      className="link-button"
+                    >
+                      <i className="text-2xl leading-none">
+                        <FaReact />
+                      </i>
+                      <span>사이트 보러가기</span>
                     </Link>
                   </li>
                   <li className="list-wrap">

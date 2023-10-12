@@ -15,7 +15,7 @@ const Frontend: NextPage<Iprops> = ({ resultData }) => {
   const results = resultData?.results;
   // console.log(`1. 노션 api의 results만 사용함 ${results}`);
   return (
-    <div className="max-w-screen-lg mx-auto">
+    <div className="mx-auto max-w-5xl">
       <h3 className="about-section-title text-3xl font-bold mt-8 mb-2.5 text-center">
         <i className="block text-[0.7em] leading-none">🖥️</i>Portfolio
       </h3>
