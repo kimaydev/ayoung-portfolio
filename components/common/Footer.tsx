@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <footer className="footer bg-white-colorA">
       <div className="max-w-screen-3xl w-95per mx-auto py-3.5 border-font-colorA border-t-[0.5px] border-solid">
-        <ul className="flex items-center justify-between text-sm">
-          <li>
+        <ul className="flex items-center justify-between text-sm sm:flex-wrap sm:justify-center sm:gap-y-3.5">
+          <li className="sm:w-full sm:text-center">
             <p>Copyright 2023. AYOUNG-KIM. All rights reserved.</p>
           </li>
-          <li>
+          <li className="">
             <ol className="flex items-center justify-between gap-x-3.5">
               <li>
                 <Link href="https://github.com/kimaydev" target="_blank">
