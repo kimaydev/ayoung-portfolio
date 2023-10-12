@@ -77,11 +77,13 @@ body {
     'Segoe UI Emoji',
     'Segoe UI Symbol',
     sans-serif;
-  // overflow: hidden;
-  // width: 100vw;
-  // height: 100vh;
-  // background: var(--main-colorA);
   color: var(--font-colorA);
+  @include tablet {
+    font-size: 15px;
+  }
+  @include mobile-l {
+    font-size: 14px;
+  }
 }
 
 @layer base {
@@ -338,6 +340,30 @@ body {
             }
           }
         }
+      }
+    }
+  }
+  @include tablet {
+    ul {
+      gap: 40px 15px;
+      & > li {
+        width: calc(100% / 3 - 10px);
+      }
+    }
+  }
+  @include mobile-l {
+    ul {
+      gap: 40px 25px;
+      & > li {
+        width: calc(100% / 2 - 13px);
+      }
+    }
+  }
+  @include mobile-m {
+    ul {
+      gap: 30px 10px;
+      & > li {
+        width: calc(100% / 2 - 5px);
       }
     }
   }
