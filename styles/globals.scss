@@ -162,10 +162,18 @@ body {
 }
 // about
 .about-section-wrap {
+  margin: 0 auto;
   & > section {
     margin-bottom: 5rem;
     &:last-of-type {
       margin-bottom: 0;
+    }
+    .profile-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 auto;
     }
     .company-name {
       position: relative;
@@ -207,6 +215,23 @@ body {
         & > p {
           width: calc(100% - 100px);
         }
+      }
+    }
+  }
+  @include tablet {
+    .profile-wrap {
+      & > li:first-of-type {
+        margin-right: 2.5rem;
+      }
+    }
+  }
+  @include mobile-m {
+    .profile-wrap {
+      flex-wrap: wrap;
+      justify-content: center !important;
+      & > li:first-of-type {
+        margin-bottom: 2rem;
+        margin-right: 0;
       }
     }
   }

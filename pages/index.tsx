@@ -35,9 +35,9 @@ export default function Home() {
         </section>
       </div>
       {/* about */}
-      <div className="about-section-wrap max-w-screen-lg mx-auto">
+      <div className="about-section-wrap">
         <section className="">
-          <ul className="flex items-center justify-between max-w-3xl w-full mx-auto">
+          <ul className="profile-wrap max-w-3xl">
             <li>
               <Image
                 src="/img/notion.png"
@@ -45,9 +45,10 @@ export default function Home() {
                 width={250}
                 height={250}
                 quality={100}
+                className="lm:w-[180px]"
               />
             </li>
-            <li className="w-[400px]">
+            <li className="w-[400px] sm:w-full sm:text-center">
               <ol>
                 <li className="mb-4">
                   <span className="block text-2xl font-bold">
@@ -76,7 +77,7 @@ export default function Home() {
                     kimaydev@gmail.com
                   </Link>
                 </li>
-                <li className="flex items-center gap-x-0.5">
+                <li className="flex items-center gap-x-0.5 sm:justify-center">
                   <Link
                     href="https://github.com/kimaydev"
                     target="_blank"
@@ -102,13 +103,14 @@ export default function Home() {
             </li>
           </ul>
         </section>
+        {/* 경력사항 */}
         <section className="">
           <h3 className="about-section-title text-3xl font-bold mb-2.5 text-center">
             <i className="block text-[0.7em] leading-none">💼</i>
             Career
           </h3>
-          <div className="flex gap-x-8 items-start justify-between">
-            <ul className="text-lg w-1/2">
+          <div className="flex gap-x-8 items-start justify-between lg:flex-wrap lg:gap-y-5">
+            <ul className="text-lg w-1/2 lg:w-full">
               <li className="company-name">
                 주식회사 11마리의낭만고양이 (2020. 08 ~ 2022. 12)
               </li>
@@ -122,7 +124,7 @@ export default function Home() {
                 </ol>
               </li>
             </ul>
-            <ul className="text-lg w-6/12">
+            <ul className="text-lg w-1/2 lg:w-full">
               <li className="company-name">대륙산업 (2019. 04 ~ 2020. 01)</li>
               <li>
                 <ol>
@@ -134,6 +136,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
+        {/* 협업 프로젝트 소개 */}
         <section className="">
           <h3 className="about-section-title text-3xl font-bold mb-2.5 text-center">
             <i className="block text-[0.7em] leading-none">👩‍👩‍👦‍👦</i>
@@ -148,6 +151,7 @@ export default function Home() {
                 </h4>
               </li>
               <li>
+                {/* 1차 */}
                 <ol className="project-list">
                   <li>
                     <h5 className="">
@@ -201,6 +205,7 @@ export default function Home() {
                     </p>
                   </li>
                 </ol>
+                {/* 2차 */}
                 <ol className="project-list">
                   <li>
                     <h5 className="">
@@ -253,6 +258,7 @@ export default function Home() {
                     </p>
                   </li>
                 </ol>
+                {/* 3차 */}
                 <ol className="project-list">
                   <li>
                     <h5 className="">
@@ -309,8 +315,9 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        <section className="flex items-start justify-between gap-x-8">
-          <div className="w-1/2">
+        {/* 자격증 및 학력 */}
+        <section className="flex items-start justify-between gap-x-8 lm:flex-wrap lm:gap-y-5">
+          <div className="w-1/2 lm:w-full">
             <h3 className="text-3xl font-bold mb-1.5">
               <i className="text-[0.7em] leading-none align-[3px]">💳</i>
               License<b className="text-sub-colorA">.</b>
@@ -323,7 +330,7 @@ export default function Home() {
               <li>2종보통운전면허 (2023. 03)</li>
             </ul>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 lm:w-full">
             <h3 className="text-3xl font-bold mb-1.5">
               <i className="text-[0.7em] leading-none align-[3px]">📝</i>
               Profile<b className="text-sub-colorA">.</b>
