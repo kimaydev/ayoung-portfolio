@@ -31,6 +31,8 @@ const config: Config = {
         'white-colorA': 'var(--white-colorA)',
       },
       screens: {
+        lg: { max: '1024px' },
+        lm: { max: '768px' },
         sm: { max: '550px' },
       },
     },

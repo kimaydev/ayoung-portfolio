@@ -60,7 +60,7 @@ export default function Layout({ children }: LayoutProps) {
         <title>프론트엔드 김아영입니다.</title>
       </Head>
       <Header />
-      <main className="pt-16 pb-20 max-w-screen-3xl w-95per mx-auto">
+      <main className="pt-16 pb-20 max-w-screen-3xl w-95per mx-auto lg:pt-20 lm:pt-32">
         <div className="">{children}</div>
       </main>
       <Footer />

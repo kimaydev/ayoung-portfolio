@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       {/* 메인 */}
-      <div className="main-section-wrap flex items-center w-full h-full">
-        <section className="flex items-center justify-between w-full">
+      <div className="main-section-wrap">
+        <section className="main-section">
           <div className="left">
             <div className="mb-[10%]">
               <h2 className="text-4xl mb-5 font-black break-keep">
@@ -22,7 +22,6 @@ export default function Home() {
                 팀원들과 어우러지는 사람이 되겠습니다.
               </p>
             </div>
-            {/* <Link href="/">Portfolio</Link> */}
           </div>
           <div className="right">
             <Image
